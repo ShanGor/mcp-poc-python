@@ -9,3 +9,9 @@
 
 ### Run client to test the server:
 > python test_mcp_client.py
+
+
+### Experience
+- Better not to enable `json_response`, because it will trigger server error while client closing.
+  > Example `mcp = FastMCP("StatelessServer", stateless_http=True, json_response=True)`
+
